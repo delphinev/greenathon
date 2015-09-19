@@ -1,0 +1,15 @@
+<%= form_for @composition do |f| %>
+	<div>
+	  <%= f.label :clothe_id %>
+	  <%= f.text_field :clothe_id %>
+	</div>
+  <div>
+    <%= f.label :material_id %>
+    <%= f.text_field :material_id %>
+  </div>
+	<div>
+	  <%= f.label :quantity %>
+	  <%= f.text_field :quantity %>
+	</div>
+  <%= f.submit %>
+<% end %>

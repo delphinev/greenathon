@@ -1,0 +1,11 @@
+<%= form_for @material do |f| %>
+	<div>
+	  <%= f.label :name %>
+	  <%= f.text_field :name %>
+	</div>
+	<div>
+	  <%= f.label :supplier %>
+	  <%= f.text_field :supplier %>
+	</div>
+  <%= f.submit %>
+<% end %>

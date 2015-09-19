@@ -1,0 +1,48 @@
+<%= form_for @clothe do |f| %>
+	<div>
+	  <%= f.label :clothe_type %>
+	  <%= f.text_field :clothe_type %>
+	</div>
+  <div>
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </div>
+	<div>
+	  <%= f.label :color %>
+	  <%= f.text_field :color %>
+	</div>
+	<div>
+	  <%= f.label :date %>
+	  <%= f.date_select :date %>
+	</div>
+	<div>
+	  <%= f.label :instruction %>
+	  <%= f.text_area :instruction %>
+	</div>
+	<div>
+	  <%= f.label :label %>
+	  <%= f.text_field :label %>
+	</div>
+	<div>
+	  <%= f.label :story %>
+	  <%= f.text_area :story %>
+	</div>
+	<div>
+	  <%= f.label :location_id %>
+	  <%= f.text_field :location_id %>
+	</div>
+	<div>
+	  <%= f.label :composition_id %>
+	  <%= f.text_field :composition_id %>
+	</div>
+	<div>
+	  <%= f.label :history_id %>
+	  <%= f.text_field :history_id %>
+	</div>
+	<div>
+	  <%= f.label :picture %>
+	  <%= f.file_field :picture %>
+	</div>
+
+  <%= f.submit %>
+<% end %>
