@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-
+  resources :clothes
   resources :modifications
   resources :users
   resources :locations
   resources :compositions
-  resources :clothes
   resources :materials
 
   # The priority is based upon order of creation: first created -> highest priority.

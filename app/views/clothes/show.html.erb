@@ -1,5 +1,11 @@
 <div>
+	<%= image_tag @clothe.picture.url %>
+</div>
+<div>
 	<%= @clothe.clothe_type %>
+</div>
+<div>
+	<%= @clothe.color %>
 </div>
 <div>
 	<%= @clothe.size %>
@@ -17,14 +23,17 @@
 	<%= @clothe.story %>
 </div>
 <div>
-	<%= @clothe.location_id %>
+	<% @clothe.locations.each do |location| %>
+		<%= location.country %> : <%= location.city %> 
+	<% end %>
 </div>
 <div>
-	<%= @clothe.composition_id %>
+	<% @clothe.compositions.each do |composition| %>
+		<%= composition.material.name %>
+	<% end %>
 </div>
 <div>
-	<%= @clothe.history_id %>
-</div>
-<div>
-	<%= image_tag @clothe.picture.url %>
+	<% @clothe.modifications.each do |modification| %>
+		<%= modification.description %>
+	<% end %>
 </div>

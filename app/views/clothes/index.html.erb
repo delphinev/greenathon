@@ -1,3 +1,10 @@
 <h1>GGeneration</h1> 
 
 
+<% @clothes.each do |clothe| %>
+	<%= image_tag clothe.picture.url %>
+	<%= clothe.clothe_type %>
+	<%= clothe.color %>
+	<%= clothe.date %>
+	<%= link_to "show", clothe %>
+<% end %>
