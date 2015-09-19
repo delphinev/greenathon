@@ -1,0 +1,24 @@
+<%= form_for @modification do |f| %>
+	<div>
+	  <%= f.label :date %>
+	  <%= f.date_select :date %>
+	</div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+	<div>
+	  <%= f.label :user_id %>
+	  <%= f.text_field :user_id %>
+	</div>
+	<div>
+	  <%= f.label :clothe_id %>
+	  <%= f.text_field :clothe_id %>
+	</div>
+	<div>
+	  <%= f.label :picture %>
+	  <%= f.file_field :picture %>
+	</div>
+
+  <%= f.submit %>
+<% end %>

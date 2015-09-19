@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150919125657) do
+ActiveRecord::Schema.define(version: 20150919141039) do
 
   create_table "clothes", force: :cascade do |t|
     t.string   "color"
@@ -42,13 +42,41 @@ ActiveRecord::Schema.define(version: 20150919125657) do
   add_index "compositions", ["material_id"], name: "index_compositions_on_material_id"
 
   create_table "locations", force: :cascade do |t|
-    t.string "country"
-    t.string "city"
+    t.string  "country"
+    t.string  "city"
+    t.string  "locatable_type"
+    t.integer "locatable_id"
   end
 
   create_table "materials", force: :cascade do |t|
     t.string "name"
     t.string "supplier"
+  end
+
+  create_table "modifications", force: :cascade do |t|
+    t.date     "date"
+    t.text     "description"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.integer  "user_id"
+    t.integer  "clothe_id"
+  end
+
+  add_index "modifications", ["clothe_id"], name: "index_modifications_on_clothe_id"
+  add_index "modifications", ["user_id"], name: "index_modifications_on_user_id"
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.text     "profile"
+    t.string   "social"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.string   "country"
+    t.string   "city"
   end
 
 end

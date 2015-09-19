@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  get 'materials/index'
 
+  resources :modifications
+  resources :users
+  resources :locations
   resources :compositions
   resources :clothes
   resources :materials

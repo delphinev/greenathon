@@ -15,7 +15,7 @@ class MaterialsController < ApplicationController
   	@material = Material.find(params[:id])
   end
 
-   def material_params
+  def material_params
   	params.require(:material).permit(:name, :supplier)
   end
 
