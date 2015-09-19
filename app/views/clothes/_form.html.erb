@@ -1,4 +1,14 @@
 <%= form_for @clothe do |f| %>
+
+	<div id="code-warpper"></div>
+
+	<div>
+  	<%= f.hidden_field :code, id: "code" %>
+	</div>
+	<div>
+	  <%= f.label :user_id %>
+	  <%= f.text_field :user_id %>
+	</div>	
 	<div>
 	  <%= f.label :clothe_type %>
 	  <%= f.text_field :clothe_type %>
@@ -28,10 +38,6 @@
 	  <%= f.text_area :story %>
 	</div>
 	<div>
-	  <%= f.label :composition_id %>
-	  <%= f.text_field :composition_id %>
-	</div>
-	<div>
 	  <%= f.label :history_id %>
 	  <%= f.text_field :history_id %>
 	</div>
@@ -42,3 +48,5 @@
 
   <%= f.submit %>
 <% end %>
+
+<script src="/script.js"></script>

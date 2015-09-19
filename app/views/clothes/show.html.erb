@@ -2,6 +2,13 @@
 	<%= image_tag @clothe.picture.url %>
 </div>
 <div>
+	<%= @clothe.user.name %>
+	<%= image_tag @clothe.user.picture.url %>
+</div>
+<div>
+	<%= @clothe.code %>
+</div>
+<div>
 	<%= @clothe.clothe_type %>
 </div>
 <div>
@@ -34,6 +41,9 @@
 </div>
 <div>
 	<% @clothe.modifications.each do |modification| %>
-		<%= modification.description %>
+		<div>
+			<%= modification.user.name %>
+			<%= modification.description %>
+		</div>
 	<% end %>
 </div>

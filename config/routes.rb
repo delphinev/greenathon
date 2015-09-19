@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get '/' => 'pages#home'
+  get 'clothes/code' => 'clothes#code'
+  post 'clothes/code' => 'clothes#sendcode'
   resources :clothes
   resources :modifications
   resources :users

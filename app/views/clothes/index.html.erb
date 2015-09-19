@@ -3,6 +3,7 @@
 
 <% @clothes.each do |clothe| %>
 	<%= image_tag clothe.picture.url %>
+	<%= clothe.code %>
 	<%= clothe.clothe_type %>
 	<%= clothe.color %>
 	<%= clothe.date %>

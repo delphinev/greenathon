@@ -17,7 +17,15 @@ class ClothesController < ApplicationController
   	@clothe = Clothe.find(params[:id])
   end
 
+  def code
+  end
+
+  def sendcode
+    @clothe = Clothe.where(code: params[:code])[0]
+    redirect_to "/clothes/#{@clothe.id}"
+  end
+
   def clothe_params
-  	params.require(:clothe).permit(:size, :clothe_type, :color, :date, :instruction, :label, :story, :location_id, :composition_id, :history_id, :picture)
+  	params.require(:clothe).permit(:code, :size, :clothe_type, :color, :date, :instruction, :label, :story, :location_id, :composition_id, :history_id, :picture)
   end
 end

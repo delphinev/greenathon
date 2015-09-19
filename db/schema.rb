@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150919144901) do
+ActiveRecord::Schema.define(version: 20150919154633) do
 
   create_table "clothes", force: :cascade do |t|
     t.string   "color"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20150919144901) do
     t.datetime "picture_updated_at"
     t.string   "clothe_type"
     t.string   "size"
+    t.string   "code"
+    t.integer  "user_id"
   end
 
   add_index "clothes", ["history_id"], name: "index_clothes_on_history_id"
