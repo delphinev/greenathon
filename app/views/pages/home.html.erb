@@ -1,12 +1,18 @@
-<div class="row">
-	<div class="col-md-6">
+<div class="nav-bar">
+	<div class="nav-bar_brand">GGeneration</div><div class="nav-bar_nav">
+		<a href="#">MARK</a>
+		<a href="#">HISTORY</a>
+		<a href="#">COMMUNITY</a>
 	</div>
-	<div class="col-md-6">
-	 <div class="contain-nav">
-	 	<a id="title-red" href="#">MARK</a>
-	 	<a id="title-green" href="#">HISTORY</a>
-	 	<a id="title-blue" rhef="#">COMMUNITY</a>
-	 </div>
-
-	</div>	
+</div>
+<div class="hall-fame_title">Hall of Fame</div>
+<div class="hall-fame">
+		<% @users.each do |user| %>
+		<div class="hall-fame_user">
+			<%= image_tag user.picture.url %>
+			<div class="hall-fame_user_name">
+				<%= user.name %>
+			</div>
+		</div>
+	<% end %>
 </div>
