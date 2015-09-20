@@ -16,6 +16,15 @@ class UsersController < ApplicationController
   	redirect_to @user
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    User.find(params[:id]).update user_params
+    redirect_to "/users/#{params[:id]}"
+  end
+
   def user_params
   	params.require(:user).permit(:name, :profile, :social, :picture, :country, :city)
   end

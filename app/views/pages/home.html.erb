@@ -1,9 +1,15 @@
 
+<h1><span>Garment</span> Generation</h1>
+<div>
+	<p>Make your garment's story</p>
+	<p>Be part of the community</p>
+</div>
+
 <div class="hall-fame_title">Hall of Fame</div>
 <div class="hall-fame">
 		<% @users.each do |user| %>
 		<div class="hall-fame_user" style="background: white;">
-			<a href="/users/<%= user.id %>"><div style="background: url(<%= user.picture.url %>);background-position:center center; background-size: cover; height:200px;"></div></a>
+			<a href="/users/<%= user.id %>"><div style="background: url(<%= user.picture.url %>);background-position:center center; background-size: cover; height:250px;"></div></a>
 			<div class="hall-fame_user_name">
 				<%= user.name %>
 			</div>
