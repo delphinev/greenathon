@@ -8,6 +8,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-		<%= yield %>
+	<div class="nav-bar">
+    <a href="/"><div class="nav-bar_brand" style="color: #000">GGeneration</div></a><div class="nav-bar_nav" style="margin-left: -10px">
+      <a href="/clothes/code">MARK</a>
+      <a href="#">HISTORY</a>
+      <a href="#">COMMUNITY</a>
+    </div>
+  </div>
+	<%= yield %>
 </body>
 </html>

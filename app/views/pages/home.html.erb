@@ -5,11 +5,12 @@
 		<a href="/community">COMMUNITY</a>
 	</div>
 </div>
+
 <div class="hall-fame_title">Hall of Fame</div>
 <div class="hall-fame">
 		<% @users.each do |user| %>
 		<div class="hall-fame_user" style="background: white;">
-			<div style="background: url(<%= user.picture.url %>);background-position:center center; background-size: cover; height:200px;"></div>
+			<a href="/users/<%= user.id %>"><div style="background: url(<%= user.picture.url %>);background-position:center center; background-size: cover; height:200px;"></div></a>
 			<div class="hall-fame_user_name">
 				<%= user.name %>
 			</div>

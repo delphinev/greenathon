@@ -4,9 +4,7 @@
 		<%= image_tag @clothe.picture.url%>
 	</div>
 
-	<div>
-		<%= @clothe.code %>
-	</div>
+
 	<div>
 		<h3>Type</h3>
 		<p><%= @clothe.clothe_type %></p>
@@ -54,17 +52,28 @@
 <div class="container_clothe_pics">
 	<h3>Care takers</h3>
 	<div class="col2 un">
-		<a href="/users/<%= @clothe.user.id %>"><%= image_tag @clothe.user.picture.url %></a><br />
+		<a href="/users/<%= @clothe.user.id %>"><%= image_tag User.find(2).clothes[0].picture.url %></a><br />
 	</div>
 	<div class="col2 deux">
-		<% @clothe.modifications.each do |modification| %>
+		<% #@clothe.modifications[0] do |modification| %>
 			<div>
-				<%= modification.description %><br />
-				<p><%= @clothe.user.name %></p>
+				<%= @clothe.modifications[0].description %><br /><br/>
+				<p style="font-weight:700"><%= @clothe.user.name %></p>
 			</div>
-		<% end %>
+		<% #end %>
 	</div>
-		<a href="/users/3"><%= image_tag User.find(3).picture.url %></a><br/>
-		<p>Zacharia Attik</p>
+	<div class="col2 un">
+		<a href="/users/3"><%= image_tag User.find(3).clothes[0].picture.url %></a><br/>
+	</div>
+	<div class="col2 deux">
+		<p>I bought this shirt in a shop, it's like all the shirts I wear for their style. I decided to take off the sleeves to do something different and have a cooler shirt for summer. Thanks to the next person for taking care of this t-shirt !</p><br/>
+		<p style="font-weight:700">Zacharia Attik</p>
+	</div>
+	<div class="col2 un">
+		<a href="/users/4"><%= image_tag User.find(4).clothes[0].picture.url %></a><br/>
+	</div>
+	<div class="col2 deux">
+		<p>I found this shirt at Guerrisol which I always go to for material for my design projects. I saw this shirt already had a history and the last person had taken off the sleeves, so I decided to transform it again into a cute crop top for the summer with fringe. I turned the sleeves into a cute bow tie. It's a cute shirt but I'm moving and have to get rid of clothes ! So sorry to part with it but hope the next person likes wearing it and it has some new adventures !!</p><br/>
+		<p style="font-weight:700">Ginny Blocher</p>
 	</div>
 </div>
