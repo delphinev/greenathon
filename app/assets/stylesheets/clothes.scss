@@ -1,3 +1,34 @@
 // Place all the styles related to the clothes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	font-family: "Open Sans";
+}
+
+.code_titles {
+	position: absolute;
+	right: 140px;
+	top: 50px;
+	text-align: center;
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+}
+
+#code-warpper {
+	position: absolute;
+	right: 220px;
+	top: 250px;
+}
+
+.code {
+	position: absolute;
+	right: 273px;
+	top: 500px;
+	font-family: "Open Sans";
+	font-size: 20px;
+}

@@ -1,10 +1,15 @@
-<%= form_tag "/clothes/code", method: "post" do %>
-<div id="code-warpper"></div>
-
-<div>
-  <input type="hidden" name="code" id="code" />
+<div class="code_titles">
+	<h2>Mark your garment</h2>
+	<h3>Mark generator</h3>
 </div>
-<input type="submit" value="Validate" />
+
+<%= form_tag "/clothes/code", method: "post" do %>
+	<div id="code-warpper"></div>
+
+	<div>
+  	<input type="hidden" name="code" id="code" />
+	</div>
+	<input class="code" type="submit" value="Validate" />
 <% end %>
 
 <script src="/script.js"></script>
