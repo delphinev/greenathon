@@ -1,3 +1,39 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+.container-user {
+	margin-left: 600px;
+	margin-top: 50px;
+	margin-right: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	.clothe_picture {
+		text-align: center;
+	}
+
+	h3 {
+		margin: 2px;
+		font-size: 14px;
+	}
+
+	p, li {
+		font-size: 12px;
+		margin: 0px 0px 0px 5px;
+	}
+}
+
+.container_user_pics {
+	margin-left: 600px;
+	margin-top: 50px;
+	margin-right: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+}

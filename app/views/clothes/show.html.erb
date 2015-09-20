@@ -1,4 +1,5 @@
 <div class="container-clothe">
+
 	<div class= "clothe_picture" >
 		<%= image_tag @clothe.picture.url%>
 	</div>
@@ -48,19 +49,22 @@
 			<% end %>
 		</ul>
 	</div>
-	<div>
+
+</div>
+<div class="container_clothe_pics">
+	<h3>Care takers</h3>
+	<div class="col2 un">
+		<a href="/users/<%= @clothe.user.id %>"><%= image_tag @clothe.user.picture.url %></a><br />
+	</div>
+	<div class="col2 deux">
 		<% @clothe.modifications.each do |modification| %>
 			<div>
-				<%= modification.user.name %>
-				<%= modification.description %>
+				<%= modification.description %><br />
+				<p><%= @clothe.user.name %></p>
 			</div>
 		<% end %>
 	</div>
-</div>
-<div class="container_clothe_pics">
-	<div>
-		
-		<%= image_tag @clothe.user.picture.url %><br />
-		<%= @clothe.user.name %>
+		<a href="/users/3"><%= image_tag User.find(3).picture.url %></a><br/>
+		<p>Zacharia Attik</p>
 	</div>
 </div>

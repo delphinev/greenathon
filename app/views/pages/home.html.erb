@@ -9,7 +9,7 @@
 <div class="hall-fame">
 		<% @users.each do |user| %>
 		<div class="hall-fame_user" style="background: white;">
-			<div style="background: url(<%= user.picture.url %>);background-position:center center;height:200px;"></div>
+			<div style="background: url(<%= user.picture.url %>);background-position:center center; background-size: cover; height:200px;"></div>
 			<div class="hall-fame_user_name">
 				<%= user.name %>
 			</div>
