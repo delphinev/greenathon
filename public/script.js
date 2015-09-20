@@ -181,3 +181,8 @@ for (i=0;i<10;i++){
   div.appendChild(checkbox)
 };
 warpper.appendChild(div);
+
+document.querySelectorAll("input[type='checkbox']")[0].checked = true;
+document.querySelectorAll("input[type='checkbox']")[9].checked = true;
+document.querySelectorAll("input[type='checkbox']")[90].checked = true;
+document.querySelectorAll("input[type='checkbox']")[99].checked = true;
