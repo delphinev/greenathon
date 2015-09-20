@@ -25,6 +25,15 @@ class ClothesController < ApplicationController
     redirect_to "/clothes/#{@clothe.id}"
   end
 
+  def edit
+    @clothe = Clothe.find(params[:id])
+  end
+
+  def update
+    Clothe.find(params[:id]).update clothe_params
+    redirect_to "/clothes/#{params[:id]}"
+  end
+
   def clothe_params
   	params.require(:clothe).permit(:code, :size, :clothe_type, :color, :date, :instruction, :label, :story, :location_id, :composition_id, :history_id, :picture)
   end

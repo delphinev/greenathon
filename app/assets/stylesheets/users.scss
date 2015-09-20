@@ -9,13 +9,14 @@ img {
 
 .container-user {
 	margin-left: 600px;
-	margin-top: 50px;
+	margin-top: 15px;
 	margin-right: 20px;
 	padding: 10px;
 	background-color: #fff;
 	border-radius: 10px;
-	.clothe_picture {
-		text-align: center;
+	.user_picture {
+		float: left;
+		padding-right: 20px;
 	}
 
 	h3 {
@@ -31,7 +32,7 @@ img {
 
 .container_user_pics {
 	margin-left: 600px;
-	margin-top: 50px;
+	margin-top: 15px;
 	margin-right: 20px;
 	padding: 10px;
 	background-color: #fff;
@@ -40,4 +41,9 @@ img {
 		font-size: 12px;
 		margin: 0px 0px 0px 5px;
 	}
+}
+
+.user_title h3 {
+	margin: 50px 0px 0px 600px;
+	font-size: 25px;
 }

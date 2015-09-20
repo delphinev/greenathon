@@ -40,13 +40,14 @@ img {
 
 .container-clothe {
 	margin-left: 600px;
-	margin-top: 50px;
+	margin-top: 5px;
 	margin-right: 20px;
 	padding: 10px;
 	background-color: #fff;
 	border-radius: 10px;
 	.clothe_picture {
-		text-align: center;
+		float: left;
+		padding-right: 20px;
 	}
 
 	h3 {
@@ -62,7 +63,7 @@ img {
 
 .container_clothe_pics {
 	margin-left: 600px;
-	margin-top: 50px;
+	margin-top: 15px;
 	margin-right: 20px;
 	padding: 10px;
 	background-color: #fff;
@@ -83,4 +84,9 @@ img {
 		width: 65%;
 		font-size: 12px;
 	}
+}
+
+.clothe_profile h3 {
+	margin: 50px 0px 0px 600px;
+	font-size: 25px;
 }

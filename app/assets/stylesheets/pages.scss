@@ -15,6 +15,7 @@ html, body  {
   font-family: "Open Sans";
   width: 100%;
   padding: 16px;
+  margin-top: 25px;
   .nav-bar_brand {
     display: inline-flex;
     justify-content: flex-start;
@@ -41,9 +42,8 @@ html, body  {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  margin-left: 16px;
-  margin-top: 80px;
-  margin-left: 390px;
+  margin-top: 30px;
+  margin-left: 490px;
   .hall-fame_user {
     margin-right: 16px;
     margin-bottom: 16px;
@@ -69,18 +69,18 @@ html, body  {
   }
 }
 .hall-fame_title {
+  width: 550px;
   font-family: "Open Sans";
   font-size: 20px;
-  margin-left: 600px;
-  margin-top: 50px;
-  color: gray;
+  margin-left: 950px;
+  margin-top: 150px;
+  color: #000;
+  font-weight: 700;
   text-transform: uppercase;
-  border-top: 1px solid #000;
-  padding-top: 20px;
 }
 
 h1 {
-margin-left: 600px;
+  margin-left: 600px;
   font-size: 50px;
   font-weight: 700;
   span {
@@ -88,6 +88,11 @@ margin-left: 600px;
   }
 }
 
-p {
-  margin-left: 760px;
+.homepage_p {
+  width: 300px;
+  margin-left: 700px;
+  font-weight: 700;
+  border-bottom: 5px solid #fff;
+  padding-left: 50px;
+  padding-bottom: 20px;
 }

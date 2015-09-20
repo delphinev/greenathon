@@ -1,13 +1,21 @@
-h2 {
-  color: gray;
+.community_title h2 {
+  color: #000;
   font-family: "Open Sans";
+  font-size: 50px;
+  margin-left: 650px;
 }
+
+
 .container-community {
-  margin-top: 230px;
+  margin-top: 50px;
   float: right;
   height: 700px;
-  width: 70%;
+  width: 50%;
   margin-right: 40px;
+  
+  h3 {
+    font-size: 27px;
+  }
 }
 
 .commmunity-picture {
