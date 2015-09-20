@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get '/' => 'pages#home'
   get 'clothes/code' => 'clothes#code'
+  get '/community' => 'pages#community'
   post 'clothes/code' => 'clothes#sendcode'
   resources :clothes
   resources :modifications
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
   resources :locations
   resources :compositions
   resources :materials
-
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
