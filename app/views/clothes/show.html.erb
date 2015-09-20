@@ -1,49 +1,66 @@
-<div>
-	<%= image_tag @clothe.picture.url %>
+<div class="container-clothe">
+	<div class= "clothe_picture" >
+		<%= image_tag @clothe.picture.url%>
+	</div>
+
+	<div>
+		<%= @clothe.code %>
+	</div>
+	<div>
+		<h3>Type</h3>
+		<p><%= @clothe.clothe_type %></p>
+	</div>
+	<div>
+		<h3>Color</h3>
+		<p><%= @clothe.color %></p>
+	</div>
+	<div>
+		<h3>Size</h3>
+		<p><%= @clothe.size %></p>
+	</div>
+	<div>
+		<h3>Date</h3>
+		<p><%= @clothe.date %></p>
+	</div>
+	<div>
+		<h3>Instruction</h3>
+		<p><%= @clothe.instruction %></p>
+	</div>
+	<div>
+		<h3>Label</h3>
+		<p><%= @clothe.label %></p>
+	</div>
+	<div>
+		<h3>Story</h3>
+		<p><%= @clothe.story %></p>
+	</div>
+	<div>
+		<h3>Made in</h3>
+		<% @clothe.locations.each do |location| %>
+			<p><%= location.country %> <%= location.city %> </p>
+		<% end %>
+	</div>
+	<div>
+		<h3>Composition</h3>
+		<ul>
+			<% @clothe.compositions.each do |composition| %>
+				<li><%= composition.material.name %> : <%= composition.quantity * 100 %> %</li>
+			<% end %>
+		</ul>
+	</div>
+	<div>
+		<% @clothe.modifications.each do |modification| %>
+			<div>
+				<%= modification.user.name %>
+				<%= modification.description %>
+			</div>
+		<% end %>
+	</div>
 </div>
-<div>
-	<%= @clothe.user.name %>
-	<%= image_tag @clothe.user.picture.url %>
-</div>
-<div>
-	<%= @clothe.code %>
-</div>
-<div>
-	<%= @clothe.clothe_type %>
-</div>
-<div>
-	<%= @clothe.color %>
-</div>
-<div>
-	<%= @clothe.size %>
-</div>
-<div>
-	<%= @clothe.date %>
-</div>
-<div>
-	<%= @clothe.instruction %>
-</div>
-<div>
-	<%= @clothe.label %>
-</div>
-<div>
-	<%= @clothe.story %>
-</div>
-<div>
-	<% @clothe.locations.each do |location| %>
-		<%= location.country %> : <%= location.city %> 
-	<% end %>
-</div>
-<div>
-	<% @clothe.compositions.each do |composition| %>
-		<%= composition.material.name %>
-	<% end %>
-</div>
-<div>
-	<% @clothe.modifications.each do |modification| %>
-		<div>
-			<%= modification.user.name %>
-			<%= modification.description %>
-		</div>
-	<% end %>
+<div class="container_clothe_pics">
+	<div>
+		
+		<%= image_tag @clothe.user.picture.url %><br />
+		<%= @clothe.user.name %>
+	</div>
 </div>

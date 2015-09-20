@@ -8,7 +8,7 @@
 
 .code_titles {
 	position: absolute;
-	right: 140px;
+	right: 115px;
 	top: 50px;
 	text-align: center;
 	h2 {
@@ -31,4 +31,40 @@
 	top: 500px;
 	font-family: "Open Sans";
 	font-size: 20px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+.container-clothe {
+	margin-left: 600px;
+	margin-top: 50px;
+	margin-right: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	.clothe_picture {
+		text-align: center;
+	}
+
+	h3 {
+		margin: 2px;
+		font-size: 14px;
+	}
+
+	p, li {
+		font-size: 12px;
+		margin: 0px 0px 0px 5px;
+	}
+}
+
+.container_clothe_pics {
+	margin-left: 600px;
+	margin-top: 50px;
+	margin-right: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
 }
