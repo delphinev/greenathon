@@ -1,8 +1,13 @@
+h2 {
+  color: gray;
+  font-family: "Open Sans";
+}
 .container-community {
   margin-top: 230px;
   float: right;
   height: 700px;
   width: 70%;
+  margin-right: 40px;
 }
 
 .commmunity-picture {
@@ -12,5 +17,5 @@
 
 .community-picture img {
   width: 100%;
-  height: 800px;
+  height: auto;
 }
