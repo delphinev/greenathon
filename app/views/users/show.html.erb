@@ -21,7 +21,7 @@
 	<h3>My dressing</h3>
 	<div>
 		<% @user.clothes.each do |clothe| %>
-			<a href="/clothes/<%= clothe.id %>"><%= image_tag clothe.picture.url %></a><br />
+			<a href="/clothes/6"><%= image_tag clothe.picture.url %></a><br />
 			<p><%= clothe.clothe_type %>, <%= clothe.label %></p>
 		<% end %>
 	</div>
